@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\data\data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DTOs/" />
+    <Folder Include="Gateways/" />
+    <Folder Include="Gateways/Interfaces/" />
+    <Folder Include="Managers/" />
+    <Folder Include="Managers/Interfaces/" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

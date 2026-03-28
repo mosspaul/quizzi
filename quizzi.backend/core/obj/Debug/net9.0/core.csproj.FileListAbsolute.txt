@@ -1,0 +1,16 @@
+/home/mosspaul/byu/work/quizzi/quizzi.backend/core/bin/Debug/net9.0/core.deps.json
+/home/mosspaul/byu/work/quizzi/quizzi.backend/core/bin/Debug/net9.0/core.dll
+/home/mosspaul/byu/work/quizzi/quizzi.backend/core/bin/Debug/net9.0/core.pdb
+/home/mosspaul/byu/work/quizzi/quizzi.backend/core/bin/Debug/net9.0/data.dll
+/home/mosspaul/byu/work/quizzi/quizzi.backend/core/bin/Debug/net9.0/data.pdb
+/home/mosspaul/byu/work/quizzi/quizzi.backend/core/obj/Debug/net9.0/core.csproj.AssemblyReference.cache
+/home/mosspaul/byu/work/quizzi/quizzi.backend/core/obj/Debug/net9.0/core.GeneratedMSBuildEditorConfig.editorconfig
+/home/mosspaul/byu/work/quizzi/quizzi.backend/core/obj/Debug/net9.0/core.AssemblyInfoInputs.cache
+/home/mosspaul/byu/work/quizzi/quizzi.backend/core/obj/Debug/net9.0/core.AssemblyInfo.cs
+/home/mosspaul/byu/work/quizzi/quizzi.backend/core/obj/Debug/net9.0/core.csproj.CoreCompileInputs.cache
+/home/mosspaul/byu/work/quizzi/quizzi.backend/core/obj/Debug/net9.0/core.sourcelink.json
+/home/mosspaul/byu/work/quizzi/quizzi.backend/core/obj/Debug/net9.0/core.csproj.Up2Date
+/home/mosspaul/byu/work/quizzi/quizzi.backend/core/obj/Debug/net9.0/core.dll
+/home/mosspaul/byu/work/quizzi/quizzi.backend/core/obj/Debug/net9.0/refint/core.dll
+/home/mosspaul/byu/work/quizzi/quizzi.backend/core/obj/Debug/net9.0/core.pdb
+/home/mosspaul/byu/work/quizzi/quizzi.backend/core/obj/Debug/net9.0/ref/core.dll

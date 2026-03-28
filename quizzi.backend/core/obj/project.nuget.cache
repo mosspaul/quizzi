@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "wx73ofYJaxI=",
+  "success": true,
+  "projectFilePath": "/home/mosspaul/byu/work/quizzi/quizzi.backend/core/core.csproj",
+  "expectedPackageFiles": [
+    "/home/mosspaul/.nuget/packages/newtonsoft.json/13.0.4/newtonsoft.json.13.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}

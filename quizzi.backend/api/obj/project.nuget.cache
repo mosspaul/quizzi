@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Bf9Ree5q1rw=",
+  "success": true,
+  "projectFilePath": "/home/mosspaul/byu/work/quizzi/quizzi.backend/api/api.csproj",
+  "expectedPackageFiles": [
+    "/home/mosspaul/.nuget/packages/microsoft.aspnetcore.openapi/9.0.14/microsoft.aspnetcore.openapi.9.0.14.nupkg.sha512",
+    "/home/mosspaul/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512",
+    "/home/mosspaul/.nuget/packages/newtonsoft.json/13.0.4/newtonsoft.json.13.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
