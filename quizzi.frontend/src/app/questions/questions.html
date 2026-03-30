@@ -1,0 +1,41 @@
+<div class="main">
+    <div class="content">
+        <div class="top">
+            <strong>{{score * 1000}}</strong>
+        </div>
+        @if (currentQuestion()) {
+        <h4>{{currentQuestion()?.question}}</h4>
+        @if (correct == null) {
+        @for (answer of currentQuestion()?.incorrectAnswers; track $index) {
+        <button class="questionButton" [ngClass]="{'selected': isSelectedAnswer(answer)}" type="button" (click)="setAnswer(answer)">{{answer}}</button>
+        }
+
+        <div class="buttonArea">
+            <button class="startButton" type="button" (click)="validateAnswer()">Submit Answer</button>
+            <div class="sep"></div>
+        </div>
+        }
+
+        @else if (correct) {
+        <h2 id="correct">Correct</h2>
+        <div class="sep"></div>
+        <div class="buttonArea">
+            <button class="questionButton" type="button" (click)="moveToNextQuestion()">Got To Next Question</button>
+        </div>
+        }
+
+        @else {
+        <h2 id="incorrect">Incorrect</h2>
+        <p>The correct answer was {{currentQuestion()?.correctAnswer}}</p>
+        <div class="sep"></div>
+        <div class="buttonArea">
+            <button class="questionButton" type="button" (click)="moveToNextQuestion()">Got To Next Question</button>
+
+        </div>
+        }
+        }
+        @else {
+        <p>Loading</p>
+        }
+    </div>
+</div>

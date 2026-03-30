@@ -1,0 +1,28 @@
+<div class="main">
+    <h2>Can you become the new Ken Jennings?</h2>
+    <div class="content">
+
+        <div class="single-select"><label for="categories">Categories</label>
+
+            <select name="categories" [(ngModel)]="selectedCategory">
+                @for (category of categories(); track category.name) {
+                <option [value]="category.id">{{category.name}}</option>
+                }
+            </select>
+        </div>
+
+        <div class="single-select">
+            <label for="difficulties">Difficulties</label>
+            <select name="difficulty" [(ngModel)]="selectedDifficulty">
+                @for (difficulty of difficulties; track $index) {
+                <option [value]="difficulty">{{difficulty}}</option>
+                }
+            </select>
+        </div>
+
+
+        <div class="buttonArea">
+            <button class="startButton" type="button" (click)="startGame()">Play Round</button>
+            <div class="sep"></div>
+        </div>
+    </div>
