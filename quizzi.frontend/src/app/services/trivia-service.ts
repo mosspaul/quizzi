@@ -13,9 +13,21 @@ export class TriviaService {
 	baseUrl = "http://localhost:5287/api/trivia/";
 	private paramsSource = new BehaviorSubject<QuestionParams | null>(null);
   	currentparams = this.paramsSource.asObservable();
+	private catagoriesSource = new BehaviorSubject<Category[]>([]);
+	categories = this.catagoriesSource.asObservable();
+	private scoreSource = new BehaviorSubject<number | null>(null);
+	score = this.scoreSource.asObservable();
 
-  changeparams(params: QuestionParams) {
+  changeParams(params: QuestionParams) {
     this.paramsSource.next(params);
+  }
+
+  setCatagories(categories: Category[]) {
+	this.catagoriesSource.next(categories);
+  }
+
+  changeScore(score: number) {
+	this.scoreSource.next(score);
   }
 
 	getCategories() {

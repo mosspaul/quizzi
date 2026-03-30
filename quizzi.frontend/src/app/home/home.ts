@@ -28,8 +28,12 @@ export class Home {
   constructor(private router: Router) {}
 
   ngOnInit() {
-    this.getCatagories()
-
+    this.triviaService.categories.subscribe(cats => {
+      this.categories.set(cats);
+      });
+    if (this.categories().length == 0) {
+      this.getCatagories()
+    }
   }
 
   getCatagories() {
@@ -39,13 +43,13 @@ export class Home {
     }))
       .subscribe(data => {
         this.categories.set(data);
-      })
+        this.triviaService.setCatagories(data);
+      });
   }
   startGame() {
     this.questionParams.Category = this.selectedCategory;
     this.questionParams.Difficulty = this.selectedDifficulty;
-    this.triviaService.changeparams(this.questionParams);
-    console.log(this.questionParams)
+    this.triviaService.changeParams(this.questionParams);
     this.router.navigate(["quiz"]);
   }
 

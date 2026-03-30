@@ -60,7 +60,7 @@ export class Questions {
             alert("Select an answer!");
         }
         else if (this.currentAnswer === this.currentQuestion()?.correctAnswer) {
-            this.score++;
+            this.score += 1000;
             this.correct = true;
         } else {
             this.correct = false;
@@ -79,6 +79,7 @@ export class Questions {
         this.correct = null
         this.questionNumber++;
         if (this.questionNumber >= this.questions().length) {
+            this.triviaService.changeScore(this.score);
             this.router.navigate(["quiz/complete"]);
         }
         else {
@@ -90,6 +91,8 @@ export class Questions {
     formatStrings(question: Question) {
         question.question= decode(question.question);
         question.correctAnswer = decode(question.correctAnswer);
-        question.incorrectAnswers.forEach((_) => decode(_));
+        for (let i = 0; i < question.incorrectAnswers.length; i++) {
+            question.incorrectAnswers[i] = decode(question.incorrectAnswers[i]);
+        }
     }
 }
