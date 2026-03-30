@@ -17,7 +17,21 @@ builder.Services.AddScoped<ITriviaManager, TriviaManager>();
 // builder.Services.AddDbContext<MossFlashDbContext>(opt =>
 //     opt.UseNpgsql(connectionString));
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAngular", policy =>
+    {
+        policy.WithOrigins("http://localhost:4200")
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
+
 var app = builder.Build();
+
+// Order matters — must be before UseAuthorization and MapControllers
+app.UseRouting();
+app.UseCors("AllowAngular");
 
 // using (var scope = app.Services.CreateScope())
 // {
